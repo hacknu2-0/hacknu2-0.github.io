@@ -896,6 +896,10 @@ about
 Tracks
 --------------------------------------------
 */
+#tracks {
+  margin-top: 100px;
+}
+
 .track-card {
   height: 225px;
   text-align: center;
@@ -1256,6 +1260,7 @@ footer
 */
 .slack-url {
   font-weight: 500 !important;
+  font-size: 1.8em !important;
 }
 
 .slack-url a {
@@ -1283,6 +1288,14 @@ footer
 }
 
 @media (max-width: 992px) {
+  .slack-url {
+    margin-left: 100px;
+    font-weight: 500 !important;
+    font-size: 1.2em !important;
+    line-height: 60px !important;
+    text-align: right !important;
+  }
+
   footer {
     padding-top: 0px !important;
     margin-top: 0px !important;
