@@ -848,13 +848,13 @@ about
 
 @media (max-width: 992px) {
   .features-item {
-    margin-bottom: 45px;
+    margin-bottom: 0px;
   }
 }
 
 .features-item {
   border-radius: 5px;
-  padding: 60px 30px;
+  padding: 20px 20px;
   text-align: center;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -889,57 +889,255 @@ about
 }
 
 
+
 /*
----------------------------------------------
-promotion
----------------------------------------------
+--------------------------------------------
+Tracks
+--------------------------------------------
 */
+.track-card {
+  height: 225px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin-bottom: 30px;
 
-.left-image-decor {
-  background-image: url(../images/left-bg-decor.png);
-  background-repeat: no-repeat;
+}
+
+.track-card a.track-button {
+  padding: 25px 40px;
+  border-radius: 25px;
+  margin: 0px;
+  background-color: #f4813f;
+  background-image: linear-gradient(to right, rgb(245, 62, 62), rgb(246, 90, 18));
+
+
+}
+
+a.track-button:hover {
+  background-color: #191a20;
+  background-image: linear-gradient(to right, rgb(12, 11, 11), rgb(0, 0, 0));
+  color: #fff !important;
+  border-radius: 2px;
+
+}
+
+/* MODAL */
+
+.parallax-window {
+  height: 400px;
+
+}
+
+.w3-modal {
+  z-index: 1000;
+}
+
+
+.track-modal {
+  margin: 30px 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 0 30px 0;
+}
+
+.track-modal h1 {
+  font: 1.4em sans-serif;
+  font-weight: 500;
+}
+
+.track-modal p {
+  text-align: left;
+  padding: 0px 70px;
+  color: #3b3b3b;
+}
+
+.modal-content {
+  height: 70vh;
+  overflow-y: auto;
+}
+
+.tracks-header {
+  padding: 20px;
+}
+
+.tracks-list {
+  overflow-x: auto;
+  height: 50px;
+}
+
+/*
+--------------------------------------------
+Timeline
+--------------------------------------------
+*/
+#timeline {
+  margin-top: 250px;
+}
+
+.timeline {
+  position: relative;
+  margin: 50px auto;
+  padding: 40px 0;
+  width: 1000px;
+  box-sizing: border-box;
+}
+
+.timeline:before {
+  content: '';
   position: absolute;
-  width: 100%;
-  display: inline-block;
-  height: 110%;
-  margin-top: -200px;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #2e2d2c;
 }
 
-#promotion {
-  padding: 100px 0px;
-}
-
-#promotion .left-image {
-  align-self: center;
-}
-
-#promotion .right-text ul {
+.timeline ul {
   padding: 0;
   margin: 0;
 }
 
-#promotion .right-text ul li {
-  display: inline-block;
-  margin-bottom: 60px;
+.timeline ul li {
+  list-style: none;
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
 }
 
-#promotion .right-text ul li:last-child {
-  margin-bottom: 0px;
-}
-
-#promotion .right-text img {
-  display: inline-block;
+.timeline ul li:nth-child(odd) {
   float: left;
-  margin-right: 30px;
+  text-align: right;
+  clear: both;
 }
 
-#promotion .right-text h4 {
-  font-size: 22px;
-  color: #1e1e1e;
-  margin-bottom: 15px;
-  margin-top: 3px;
+.timeline ul li:nth-child(even) {
+  float: right;
+  text-align: left;
+  clear: both;
 }
 
+.content {
+  padding-bottom: 20px;
+}
+
+.timeline ul li:nth-child(odd):before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 24px;
+  right: -6px;
+  background: rgb(233, 90, 33);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.2);
+}
+
+.timeline ul li:nth-child(even):before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 24px;
+  left: -4px;
+  background: rgb(233, 90, 33);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(248, 4, 4, 0.2);
+}
+
+.timeline ul li h3 {
+  padding: 0;
+  margin: 0;
+  color: f48141;
+  font-weight: 500;
+}
+
+.timeline ul li p {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.timeline ul li .time h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.timeline ul li h5 {
+  margin: 5px 15px;
+  padding: 0;
+  font-size: 18px;
+  color: #686766;
+}
+
+.timeline ul li:nth-child(odd) .time {
+  position: absolute;
+  top: 12px;
+  right: -165px;
+  margin: 0;
+  padding: 8px 16px;
+  background: #f48141;
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgba(36, 3, 14, 0.363);
+}
+
+.timeline ul li:nth-child(even) .time {
+  position: absolute;
+  top: 12px;
+  left: -165px;
+  margin: 0;
+  padding: 8px 16px;
+  background: #f48141;
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgba(19, 1, 7, 0.335);
+}
+
+@media(max-width:1000px) {
+  .timeline {
+    width: 100%;
+  }
+}
+
+@media(max-width:767px) {
+  .timeline {
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .timeline:before {
+    left: 20px;
+    height: 100%;
+  }
+
+  .timeline ul li:nth-child(odd),
+  .timeline ul li:nth-child(even) {
+    width: 100%;
+    text-align: left;
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+
+  .timeline ul li:nth-child(odd):before,
+  .timeline ul li:nth-child(even):before {
+    top: -18px;
+    left: 16px;
+  }
+
+  .timeline ul li:nth-child(odd) .time,
+  .timeline ul li:nth-child(even) .time {
+    top: -30px;
+    left: 50px;
+    right: inherit;
+  }
+}
 
 /*
 --------------------------------------------
@@ -957,17 +1155,17 @@ testimonials
   margin-top: -200px;
 }
 
-#testimonials {
-  padding-top: 100px;
+#workshops {
+  padding-top: 50px;
   position: relative;
   z-index: 9;
 }
 
-#testimonials .item {
+#workshops .item {
   position: relative;
 }
 
-#testimonials .item .testimonial-content {
+#workshops .item .testimonial-content {
   background: rgb(244, 129, 63);
   background: linear-gradient(145deg, rgba(244, 129, 63, 1) 0%, rgba(241, 85, 106, 1) 100%);
   margin-left: 60px;
@@ -976,36 +1174,36 @@ testimonials
   border-radius: 5px;
 }
 
-#testimonials .item .testimonial-content ul li {
+#workshops .item .testimonial-content ul li {
   display: inline-block;
   margin: 0px 1px;
 }
 
-#testimonials .item .testimonial-content ul li i {
+#workshops .item .testimonial-content ul li i {
   color: #fff;
   font-size: 13px;
 }
 
-#testimonials .item .testimonial-content h4 {
+#workshops .item .testimonial-content h4 {
   font-size: 22px;
   margin-top: 20px;
   color: #fff;
 }
 
-#testimonials .item .testimonial-content p {
+#workshops .item .testimonial-content p {
   color: #fff;
   font-style: italic;
   font-weight: 200;
   margin: 20px 0px 15px 0px;
 }
 
-#testimonials .item .testimonial-content span {
+#workshops .item .testimonial-content span {
   color: #fff;
   font-weight: 200;
   font-size: 13px;
 }
 
-#testimonials .author img {
+#workshops .author img {
   max-width: 120px;
   margin-bottom: -60px;
 }
@@ -1055,6 +1253,33 @@ testimonials
 footer
 --------------------------------------------- 
 */
+.slack-url {
+  font-weight: 500 !important;
+}
+
+.slack-url a {
+  font-weight: 800;
+  color: #242424 !important;
+  transition: ease 0.5s !important;
+  border: 5px solid #f48141;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.609);
+  box-shadow: 10px 10px 8px #1f1f1f;
+
+}
+
+
+
+.slack-url a:hover {
+  color: #ffffff !important;
+  border: 5px solid #000000;
+  border-radius: 10px;
+  background: rgb(248, 115, 38);
+  box-shadow: 5px 8px 8px #1f1f1f;
+
+}
 
 @media (max-width: 992px) {
   footer {
