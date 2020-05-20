@@ -1267,11 +1267,11 @@ footer
   font-weight: 800;
   color: #242424 !important;
   transition: ease 0.5s !important;
-  border: 5px solid #f48141;
+  /* border: 5px solid #f48141; */
   padding: 20px;
   margin: 20px;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.609);
+  /* border-radius: 10px;
+  background: rgba(255, 255, 255, 0.609); */
   box-shadow: 10px 10px 8px #1f1f1f;
 
 }
@@ -1280,9 +1280,9 @@ footer
 
 .slack-url a:hover {
   color: #ffffff !important;
-  border: 5px solid #000000;
-  border-radius: 10px;
-  background: rgb(248, 115, 38);
+  /* border: 5px solid #000000; */
+  /* border-radius: 10px; */
+  /* background: rgb(248, 115, 38); */
   box-shadow: 5px 8px 8px #1f1f1f;
 
 }
